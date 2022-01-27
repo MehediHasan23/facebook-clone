@@ -82,16 +82,10 @@ nav ul {
   align-items: center;
 }
 
-profile_section nav ul {
-  display: flex;
-  align-items: center;
-}
-
 /* middle area */
 
 nav ul {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -115,10 +109,10 @@ nav ul li a::after {
   background: #b1b1b1;
   bottom: -40px;
   left: 50%;
+  transform: translateX(-50%);
   font-size: 14px;
   padding: 8px 10px;
   border-radius: 8px;
-  transform: translateX(-50%);
   position: absolute;
 }
 
@@ -151,7 +145,57 @@ nav ul li span {
 
 /* profile section */
 
-.profile_section nav ul {
+.profile_section ul {
   display: flex;
   align-items: center;
+}
+.profile_section ul li:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.profile_section ul li:first-child img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.profile_section ul li:first-child {
+  color: white;
+  align-items: center;
+  padding: 5px;
+  border-radius: 25px;
+  transition: 0.2s;
+  cursor: pointer;
+  height: unset;
+  width: unset;
+  background: unset;
+}
+
+.profile_section ul li:first-child:hover {
+  background: #3a3b3c;
+}
+
+.profile_section ul li {
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #3a3b3c;
+  transition: .3s;
+}
+
+.profile_section ul li:hover {
+  background-color: #8f888867;
+}
+
+.profile_section ul li span,
+i {
+  color: white;
+  font-size: 23px;
+  cursor: pointer;
 }
