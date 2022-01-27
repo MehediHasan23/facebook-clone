@@ -1,0 +1,157 @@
+/* common css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* header css */
+header {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #242526;
+}
+
+.search_area {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.search_area .logo {
+  height: 40px;
+  width: 40px;
+}
+
+.search_area .logo a {
+  display: block;
+}
+
+.search_area .logo a img {
+  width: 100%;
+}
+
+.search {
+  width: 240px;
+  height: 40px;
+  background: #3a3b3c;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  padding: 0px 10px;
+  margin-left: 15px;
+}
+
+.search span {
+  width: 25px;
+  font-size: 23px;
+  color: white;
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: unset;
+  height: 100%;
+  font-size: 15px;
+  color: white;
+}
+
+.search input::placeholder {
+  font-size: 15px;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+profile_section nav ul {
+  display: flex;
+  align-items: center;
+}
+
+/* middle area */
+
+nav ul {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 40px;
+  border-radius: 8px;
+  transition: 0.3s;
+  position: relative;
+}
+
+nav ul li a:hover {
+  background: #3a3b3c;
+}
+
+nav ul li a::after {
+  display: none;
+  content: attr(data-tag);
+  color: rgba(12, 10, 10, 0.884);
+  text-align: center;
+  background: #b1b1b1;
+  bottom: -40px;
+  left: 50%;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+nav ul li a:hover::after {
+  display: block;
+}
+
+nav ul li:first-child a {
+  padding: 12px 40px;
+  border-bottom: 3px solid #2374e1;
+}
+nav ul li:first-child a span {
+  color: #2374e1;
+}
+
+nav ul li:first-child a {
+  border-radius: unset;
+  background: unset;
+}
+
+nav ul li:first-child a:hover {
+  border-radius: unset;
+  background: unset;
+}
+
+nav ul li span {
+  color: white;
+  font-size: 30px;
+}
+
+/* profile section */
+
+.profile_section nav ul {
+  display: flex;
+  align-items: center;
+}
