@@ -1,0 +1,42 @@
+@media (max-width: 1170px) {
+  .search {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .search input {
+    display: none;
+  }
+
+  .profile_section ul li:nth-child(3) {
+    display: flex;
+  }
+
+  .profile_section ul li:nth-child(1) {
+    display: none;
+  }
+
+  .profile_section ul li:nth-child(2) {
+    display: none;
+  }
+
+  nav ul li:last-child {
+    display: flex;
+  }
+  nav ul li:nth-child(5) {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  nav {
+    display: none;
+  }
+
+  .menu_toggler {
+    display: flex;
+    margin-left: 15px;
+    font-size: 26px;
+    color: white;
+  }
+}

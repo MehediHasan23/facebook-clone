@@ -24,6 +24,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background: #242526;
+  width: 100%;
 }
 
 .search_area {
@@ -76,18 +77,21 @@ header {
   font-size: 15px;
   color: white;
 }
-
-nav ul {
-  display: flex;
-  align-items: center;
+.menu_toggler{
+  display: none;
 }
 
 /* middle area */
 
 nav ul {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
+
+/* nav ul {
+  display: flex;
+  justify-content: center;
+} */
 
 nav ul li a {
   display: inline-block;
@@ -138,6 +142,10 @@ nav ul li:first-child a:hover {
   background: unset;
 }
 
+nav ul li:last-child {
+  display: none;
+}
+
 nav ul li span {
   color: white;
   font-size: 30px;
@@ -186,7 +194,11 @@ nav ul li span {
   height: 40px;
   border-radius: 50%;
   background: #3a3b3c;
-  transition: .3s;
+  transition: 0.3s;
+}
+
+.profile_section ul li:nth-child(3) {
+  display: none;
 }
 
 .profile_section ul li:hover {
