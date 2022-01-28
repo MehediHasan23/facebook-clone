@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
 }
@@ -25,6 +29,9 @@ header {
   align-items: center;
   background: #242526;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .search_area {
@@ -77,7 +84,7 @@ header {
   font-size: 15px;
   color: white;
 }
-.menu_toggler{
+.menu_toggler {
   display: none;
 }
 
@@ -210,4 +217,184 @@ i {
   color: white;
   font-size: 23px;
   cursor: pointer;
+}
+
+/* main section css */
+main {
+  max-width: 1464px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.left_side,
+.right_side {
+  flex-basis: 330px;
+  background-color: rgb(136, 141, 141);
+  height: 100vh;
+  padding-top: 56px;
+}
+
+.middle_side {
+  flex-grow: 1;
+  background: rgb(0, 0, 0);
+  height: 100vh;
+  padding-top: 56px;
+}
+
+.left_side {
+  padding: 75px 15px 0px 15px;
+  overflow: auto;
+  background-color: #18191a;
+}
+
+.left_menu {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.left_menu li {
+  display: flex;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.left_menu li a {
+  padding: 8px 5px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.left_menu li:hover {
+  background: #303031;
+}
+
+.left_menu li a img {
+  height: 28px;
+  width: 28px;
+  margin-right: 8px;
+}
+
+.left_menu li:first-child img {
+  border-radius: 50%;
+}
+
+.left_menu li:last-child {
+  padding: 8px 5px;
+}
+
+.left_menu li:last-child div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  width: 28px;
+  height: 28px;
+  background: #3a3b3c;
+  border-radius: 50%;
+}
+
+/* separate */
+
+.separate {
+  width: 100%;
+  height: 1px;
+  background-color: #3e4042;
+}
+
+/* lower part */
+
+.shortcut_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.shortcut_title h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #b0b3b8;
+  height: 30px;
+}
+
+.shortcut_title button {
+  display: none;
+  color: rgb(12, 76, 224);
+  background-color: unset;
+  border: 0;
+  outline: 0;
+  padding: 7px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.shortcut_title:hover button {
+  display: block;
+}
+
+.shortcut_title button:hover {
+  background-color: #4f5050;
+  color: rgb(3, 31, 94);
+}
+
+/* scrollbar css */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  /* padding-top: 70px; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: unset;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #363636;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444444;
+  border-radius: 25px;
+  display: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(116, 116, 116);
+}
+
+left_side:hover::-webkit-scrollbar-thumb {
+  display: block;
+}
+
+/* ===========
+second left 
+===============*/
+
+.second_left li a img {
+  border-radius: 6px;
+}
+
+.footer_text{
+  margin-bottom: 24px;
+}
+
+.footer_text a {
+  font-size: 12px;
+  font-weight: 500;
+  color: #adadad;
+}
+
+.footer_text a span{
+  transform: translateY(7px);
 }

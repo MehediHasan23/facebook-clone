@@ -26,6 +26,9 @@
   nav ul li:nth-child(5) {
     display: none;
   }
+  .left_side{
+    display: none;
+  }
 }
 
 @media (max-width: 992px) {
@@ -38,5 +41,8 @@
     margin-left: 15px;
     font-size: 26px;
     color: white;
+  }
+  .right_side {
+    display: none;
   }
 }
