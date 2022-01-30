@@ -529,6 +529,12 @@ second left
   padding: unset;
 }
 
+
+.right_bottom li a img {
+  border-radius: 50%;
+}
+
+
 /* scrollbar css */
 
 /* width */
@@ -561,6 +567,5 @@ second left
   display: block;
 }
 
-.right_bottom li a img {
-  border-radius: 50%;
-}
+
+
